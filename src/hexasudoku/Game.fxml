@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #b8b6b6;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hexasudoku.GameController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="306.0" layoutY="8.0" prefHeight="585.0" prefWidth="588.0" style="-fx-background-color: #FCFDFD;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane fx:id="q0" gridLinesVisible="true" styleClass="grid">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t00" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t01" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t02" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t03" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t04" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t05" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t06" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t07" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t08" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t09" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t0a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t0b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t0c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t0d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t0e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t0f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q1" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t10" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t11" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t12" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t13" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t14" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t15" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t16" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t17" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t18" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t19" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t1a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t1b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t1c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t1d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t1e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t1f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q2" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t20" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t21" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t22" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t23" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t24" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t25" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t26" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t27" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t28" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t29" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t2a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t2b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t2c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t2d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t2e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t2f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q3" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t30" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t31" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t32" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t33" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t34" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t35" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t36" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t37" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t38" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t39" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t3a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t3b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t3c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t3d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t3e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t3f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q4" gridLinesVisible="true" styleClass="grid" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t40" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t41" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t42" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t43" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t44" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t45" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t46" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t47" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t48" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t49" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t4a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t4b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t4c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t4d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t4e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t4f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q5" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t50" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t51" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t52" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t53" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t54" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t55" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t56" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t57" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t58" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t59" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t5a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t5b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t5c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t5d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t5e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t5f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q6" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t60" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t61" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t62" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t63" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t64" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t65" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t66" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t67" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t68" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t69" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t6a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t6b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t6c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t6d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t6e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t6f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q7" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t70" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t71" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t72" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t73" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t74" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t75" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t76" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t77" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t78" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t79" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t7a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t7b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t7c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t7d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t7e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t7f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q8" gridLinesVisible="true" styleClass="grid" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t80" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t81" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t82" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t83" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t84" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t85" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t86" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t87" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t88" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t89" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t8a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t8b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t8c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t8d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t8e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t8f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="q9" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="t90" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="t91" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="t92" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="t93" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="t94" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="t95" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="t96" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="t97" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="t98" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="t99" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="t9a" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="t9b" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="t9c" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="t9d" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="t9e" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="t9f" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qa" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="ta0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="ta1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="ta2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="ta3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="ta4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="ta5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="ta6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="ta7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="ta8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="ta9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="taa" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tab" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tac" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="tad" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tae" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="taf" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qb" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="tb0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="tb1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tb2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="tb3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="tb4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="tb5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tb6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="tb7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tb8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="tb9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tba" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tbb" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tbc" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="tbd" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tbe" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tbf" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qc" gridLinesVisible="true" styleClass="grid" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="tc0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="tc1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tc2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="tc3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="tc4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="tc5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tc6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="tc7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tc8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="tc9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tca" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tcb" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tcc" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="tcd" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tce" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tcf" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qd" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="td0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="td1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="td2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="td3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="td4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="td5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="td6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="td7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="td8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="td9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tda" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tdb" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tdc" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="tdd" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tde" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tdf" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qe" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="te0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="te1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="te2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="te3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="te4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="te5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="te6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="te7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="te8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="te9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tea" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="teb" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tec" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="ted" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tee" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tef" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="qf" gridLinesVisible="true" styleClass="grid" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="tf0" prefHeight="39.0" prefWidth="37.0" />
+                  <TextField fx:id="tf1" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tf2" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="tf3" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="tf4" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf5" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf6" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf7" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf8" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="tf9" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfa" prefHeight="39.0" prefWidth="37.0" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfb" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfc" prefHeight="39.0" prefWidth="37.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfd" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfe" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tff" prefHeight="39.0" prefWidth="37.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <Pane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #2d2d2d;">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="101.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="105.0" layoutX="93.0" layoutY="163.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/easy.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="close" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#close_application" style="-fx-background-color: #2d2d2d;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="easy" layoutX="85.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#easyMode" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Easy">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="89.0" fitWidth="77.0" layoutX="106.0" layoutY="256.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/medium.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="medium" layoutX="85.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#mediumMode" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Medium">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="81.0" fitWidth="60.0" layoutX="120.0" layoutY="368.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hard.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="hard" layoutX="85.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#hardMode" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Hard">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="time_label" layoutX="109.0" layoutY="103.0" text="HexaSudoku" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="check_go" layoutX="85.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#checkGame" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Check">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="state_label" alignment="CENTER" layoutX="3.0" layoutY="141.0" prefHeight="22.0" prefWidth="292.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="play" layoutX="85.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#resume_game" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Play">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="pause" layoutX="84.0" layoutY="479.0" mnemonicParsing="false" onAction="#pause_game" onMouseClicked="#pause_game" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Pause">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="surrender_go" layoutX="85.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#surrender" opacity="0.79" prefHeight="34.0" prefWidth="131.0" styleClass="difficultyButton" text="Surrender">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="winner" fitHeight="304.0" fitWidth="451.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="150.0">
+         <image>
+            <Image url="@../images/winner.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
